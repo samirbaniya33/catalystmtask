@@ -1,0 +1,223 @@
+.App {
+  text-align: center;
+}
+.App-link {
+  color: #61dafb;
+}
+
+.maincontainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+   background-color: rgba(0,0,0, 0.7);
+   color: white;
+}
+.navbarleft{
+    margin-inline: 2rem;
+}
+.navbarright{
+    width: 50%;
+    height: 3rem;
+    
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+
+}
+.navbarright>*{
+    margin: 3rem;
+}
+.cartsect{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+
+.hero{
+    width: 100%;
+    height: 30rem;
+    margin-top: 4rem;
+
+}
+.heroimg{
+    margin-bottom: 10rem;
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+.herotext{
+    position: absolute;
+    top: 15rem;
+    left: 7rem;
+    text-align: start;
+    color: white;
+}
+
+.herotext>button{
+    width: 10rem;
+    height: 3rem;
+    border: transparent;
+    border-radius: 7%;
+    background-color: rgb(196, 53, 5);
+    color: white;
+}
+
+
+.productscontainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 4rem;
+}
+
+.filtercontainer{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.materials>p{
+    cursor: pointer;
+}
+.color>p{
+    cursor: pointer;
+}
+.productcardcontainer{
+    width: 80%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.productcard{
+    position: relative;
+    width: 20%;
+}
+
+.prodimg{   
+    background-color: rgb(234, 233, 233);
+    width: 100%;
+    height: 20rem;
+    cursor: pointer;
+    
+}   
+.prodimg>img{
+    width: 100%;
+    height: 20rem;
+    object-fit: fill;
+
+}
+
+/* .overlay {
+    position: absolute;
+    left: 0;
+  bottom: 100%;
+  height: 0;
+  width: 16rem;
+  overflow: hidden;
+  backdrop-filter: blur(8px) brightness(80%);
+  transition: all .3s ease-in-out;
+}
+  
+.prodimg>img:hover .overlay{
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    
+} */
+
+.prodtitle{
+    text-align: start;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.proddesc{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    text-transform: uppercase;
+
+}
+
+.prodprice{
+    text-align: start;
+}
+
+.footer{
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(78, 74, 74);
+    color: white;
+}
+
+.footerleft{
+    width: 10%;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+.footerleftcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.footercenter{
+    width: 50%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.footerright{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+
+@media (max-width: 1000px){
+
+    .productcard{
+        width: 25%;
+    }
+}
